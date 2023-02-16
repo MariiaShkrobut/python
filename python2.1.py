@@ -4,4 +4,5 @@ property_transfer_xml = """
 //urn:multiCall/sessionId['?']</con:targetPath>
 """
 result = property_transfer_xml.split('con:targetType')
-print(result)
+result[1] = result[1].strip('>''/''<')
+print(result[1])
